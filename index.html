@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to Fontawesome -->
-    <script src="https://kit.fontawesome.com/2efc9175bc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2efc9175bc.js" crossorigin="anonymous"></script>    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <!-- Custom styling -->
     <link rel="stylesheet" href="style.css">
     <title>Weather Dashboard</title>
 </head>
 <body>
     <!-- Title element -->
-    <header class="header">
-        <div id="title">
+    <header>
+        <div>
             <h1>Weather Dashboard</h1>
         </div>
     </header>
     <!-- Information container -->
     <main class="content-dashboard">
         <!-- Left column -->
-        <div>
-        <div id="search block">
+        <div id="left-column">
+        <div id="search-block">
             <h2 class="l-title">Search for a City:</h2>
             <!-- Input text to look for a city name -->
             <input type="text" placeholder="City Name" id="city-input">
             <!-- TODO: Trigger fetch function -->
-            <button class="main-btn" id="search-button">Search</button>
+            <button id="search-btn">Search</button>
         </div>
         <!-- TODO: Retrieve latest cities searched from localStorage -->
-        <div id="search-history">
+        <div>
             <h3 class="s-title">Recently searched:</h3>
             <div id="search-history">
                 <p class="result">Mexico City</p>
@@ -40,29 +43,33 @@
         </div>
         <!-- Right column -->
         <!-- TODO: Display current city information -->
+        <div id="right-column">
         <div id="city-info">
             <!-- TODO: Insert current date in "span" element -->
-            <h2 class="l-title city-name">City name placeholder<span id="current-date"> (22/04/2023)</span></h2>
+            <h2 class="l-title">City name placeholder<span id="current-date"> (22/04/2023)</span></h2>
             <!-- Insert weather icon based on current weather -->
-            <i></i>
+            <i class="weather-icon">weather logo placeholder</i>
             <!-- TODO: Display information from weather API -->
-            <p id="temp" class="">Temp:</p>
-            <p id="wind">Wind:</p>
-            <p id="humidity">Humidity:</p>
+            <p class="info-main">Temp:</p>
+            <p class="info-main">Wind:</p>
+            <p class="info-main">Humidity:</p>
         </div>
         <!-- 5-Day Forecast -->
+        <h3 class="s-title">5-Day Forecast:</h3>
         <div id="forecast">
-            <h3 class="s-title">5-Day Forecast:</h3>
+            <!-- Day 1 -->
+            <!-- TODO: Define classes and/or id's to fetch weather data from API -->
+            <!-- TODO: Apply format to all days -->
             <div class="forecast-card" id="day-1">
-                <h4 class="card-title">Date 1 placeholder</h4>
-                <i>Logo placeholder</i>
+                <h4 class="card-title">Date 1</h4>
+                <i class="weather-icon">Logo placeholder</i>
                 <p>Temp:</p>
                 <p>Wind:</p>
                 <p>Humidity:</p>
             </div>            
             
             <div class="forecast-card" id="day-2">
-                <h4 class="card-title">Date 2 placeholder</h4>
+                <h4 class="card-title">Date 2</h4>
                 <i>Logo placeholder</i>
                 <p>Temp:</p>
                 <p>Wind:</p>
@@ -70,7 +77,7 @@
             </div>            
             
             <div class="forecast-card" id="day-3">
-                <h4 class="card-title">Date 3 placeholder</h4>
+                <h4 class="card-title">Date 3</h4>
                 <i>Logo placeholder</i>
                 <p>Temp:</p>
                 <p>Wind:</p>
@@ -78,7 +85,7 @@
             </div>            
             
             <div class="forecast-card" id="day-4">
-                <h4 class="card-title">Date 4 placeholder</h4>
+                <h4 class="card-title">Date 4</h4>
                 <i>Logo placeholder</i>
                 <p>Temp:</p>
                 <p>Wind:</p>
@@ -86,17 +93,20 @@
             </div>            
             
             <div class="forecast-card" id="day-5">
-                <h4 class="card-title">Date 5 placeholder</h4>
+                <h4 class="card-title">Date 5</h4>
                 <i>Logo placeholder</i>
                 <p>Temp:</p>
                 <p>Wind:</p>
                 <p>Humidity:</p>
             </div>
         </div>
+        </div>
     </main>
     <footer class="footer">
-        <p>Made by:<a href="https://github.com/Morkendi">Morkendi</a></p>
-    </footer>
+        <h2>Made by:<a href="https://github.com/Morkendi">Morkendi <i class="fa-brands fa-github fa-lg"></i></a></h2>
+        <!-- TODO: Insert GitHub logo -->
+
+        </footer>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,141 @@
+:root {
+    --grad-1: #23456A;
+    --grad-2: #3788AE;
+    --text-1: white;
+    --results: #00788D;
+    --button: #60566A;
+    --card: #4F8ABD;
+}
+
 * {
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-1);
+    background-image: linear-gradient(to right,var(--grad-1), var(--grad-2));
+}
+
+main {
+    display: flex;
+}
+
+#left-column {
+    width: 25vw;
+    padding-left: 15px;
+    padding-right: 25px;
+}
+
+#search-block {
+    padding-bottom: 10px;
+    border-bottom: 3px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.l-title {
+    padding: 5px;
+    font-size: 32px;
+}
+
+.weather-icon {
+    padding: 5px;
+}
+
+#city-input {
+    text-align: center;
+    font-size: 20px;
+}
+
+#search-btn {
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--text-1);
+    margin-top: 5px;
+    border: none;
+    background-color: var(--button);
+}
+
+#search-btn:hover {
+    cursor: pointer;
+}
+
+.s-title {
+    padding-top: 15px;
+    font-size: 25px;
+}
+
+#search-history p {
+    color: var(--text-1);
+    font-size: 18px;
+    text-align: center;
+    padding: 8px;
+    margin: 10px;
+    background-color: var(--results);
+}
+
+#right-column {
+    padding-right: 15px;
+    width: 75vw;
+}
+
+#city-info {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#city-info p {
+    font-size: 22px;
+}
+
+.info-main {
+    padding: 5px;
+}
+
+#forecast {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-card {
+    padding: 3px;
+    background-color: var(--card);
+}
+
+.forecast-card p {
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+.card-title {
+    font-size: 22px;
+    color: var(--text-1);
+}
+
+footer { 
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--text-1);
+    background-image: linear-gradient(to right,var(--grad-1), var(--grad-2));
+}
+
+footer a {
+    padding: 5px;
+    color: var(--main-text);
+    text-decoration: none;
 }
