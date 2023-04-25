@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link to Fontawesome -->
-    <script src="https://kit.fontawesome.com/2efc9175bc.js" crossorigin="anonymous"></script>    <!-- Link to Google Fonts -->
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/2efc9175bc.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -28,10 +29,9 @@
             <h2 class="l-title">Search for a City:</h2>
             <!-- Input text to look for a city name -->
             <input type="text" placeholder="City Name" id="city-input">
-            <!-- TODO: Trigger fetch function -->
             <button id="search-btn">Search</button>
         </div>
-        <!-- TODO: Retrieve latest cities searched from localStorage -->
+        
         <div>
             <h3 class="s-title">Recently searched:</h3>
             <div id="search-history">
@@ -42,71 +42,63 @@
         </div>
         </div>
         <!-- Right column -->
-        <!-- TODO: Display current city information -->
         <div id="right-column">
         <div id="city-info">
-            <!-- TODO: Insert current date in "span" element -->
-            <h2 class="l-title">City name placeholder<span id="current-date"> (22/04/2023)</span></h2>
-            <!-- Insert weather icon based on current weather -->
-            <i class="weather-icon">weather logo placeholder</i>
-            <!-- TODO: Display information from weather API -->
-            <p class="info-main">Temp:</p>
-            <p class="info-main">Wind:</p>
-            <p class="info-main">Humidity:</p>
+            <h2 id="current-city" class="l-title"></h2>
+            <h2 id="current-date"></h2>
+            <p class="weather-data temp"></p>
+            <p class="weather-data wind"></p>
+            <p class="weather-data humidity"></p>
         </div>
         <!-- 5-Day Forecast -->
         <h3 class="s-title">5-Day Forecast:</h3>
         <div id="forecast">
             <!-- Day 1 -->
-            <!-- TODO: Define classes and/or id's to fetch weather data from API -->
-            <!-- TODO: Apply format to all days -->
             <div class="forecast-card" id="day-1">
-                <h4 class="card-title">Date 1</h4>
-                <i class="weather-icon">Logo placeholder</i>
-                <p>Temp:</p>
-                <p>Wind:</p>
-                <p>Humidity:</p>
+                <h4 class="card-title"></h4>
+                <p class="weather-data temp"></p>
+                <p class="weather-data wind"></p>
+                <p class="weather-data humidity"></p>
             </div>            
-            
+            <!-- Day 2-->
             <div class="forecast-card" id="day-2">
-                <h4 class="card-title">Date 2</h4>
-                <i>Logo placeholder</i>
-                <p>Temp:</p>
-                <p>Wind:</p>
-                <p>Humidity:</p>
+                <h4 class="card-title"></h4>
+                <p class="weather-data temp"></p>
+                <p class="weather-data wind"></p>
+                <p class="weather-data humidity"></p>
             </div>            
             
+            <!-- Day 3-->
             <div class="forecast-card" id="day-3">
-                <h4 class="card-title">Date 3</h4>
-                <i>Logo placeholder</i>
-                <p>Temp:</p>
-                <p>Wind:</p>
-                <p>Humidity:</p>
+                <h4 class="card-title"></h4>
+                <p class="weather-data temp"></p>
+                <p class="weather-data wind"></p>
+                <p class="weather-data humidity"></p>
             </div>            
             
+            <!-- Day 4-->
             <div class="forecast-card" id="day-4">
-                <h4 class="card-title">Date 4</h4>
-                <i>Logo placeholder</i>
-                <p>Temp:</p>
-                <p>Wind:</p>
-                <p>Humidity:</p>
+                <h4 class="card-title"></h4>
+                <p class="weather-data temp"></p>
+                <p class="weather-data wind"></p>
+                <p class="weather-data humidity"></p>
             </div>            
             
+            <!-- Day 5-->
             <div class="forecast-card" id="day-5">
-                <h4 class="card-title">Date 5</h4>
-                <i>Logo placeholder</i>
-                <p>Temp:</p>
-                <p>Wind:</p>
-                <p>Humidity:</p>
+                <h4 class="card-title"></h4>
+                <p class="weather-data temp"></p>
+                <p class="weather-data wind"></p>
+                <p class="weather-data humidity"></p>
             </div>
         </div>
         </div>
     </main>
     <footer class="footer">
-        <h2>Made by:<a href="https://github.com/Morkendi">Morkendi <i class="fa-brands fa-github fa-lg"></i></a></h2>
-        <!-- TODO: Insert GitHub logo -->
-
+        <h2>Made by:<a href="https://github.com/Morkendi">Morkendi <i class="fa-brands fa-github fa-md"></i></a></h2>
         </footer>
+        <!-- DayJs for time formatting -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
