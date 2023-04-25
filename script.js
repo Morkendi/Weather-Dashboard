@@ -114,10 +114,6 @@ function getWeatherInfo(lat, lon) {
         })
 }
 
-function storeCities() {
-    
-}
-
 searchBtn.addEventListener('click', function fetchCity() {
     let cityName = citySearch.value;
     getCityCoordinates(cityName)
