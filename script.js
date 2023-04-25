@@ -26,7 +26,7 @@ let now = dayjs()
 // API Calls
 // Get latitude and longitude data
 function getCityCoordinates(city) {
-    let apiURL = 'http://api.openweathermap.org/geo/1.0/direct?q='+ city +'&limit='+ 1 +'&appid='+ apiKey;
+    let apiURL = 'https://api.openweathermap.org/geo/1.0/direct?q='+ city +'&limit='+ 1 +'&appid='+ apiKey;
 
     fetch(apiURL)
         .then(function (response) {
@@ -42,7 +42,7 @@ function getCityCoordinates(city) {
 
 // Get weather information
 function getWeatherInfo(lat, lon) {
-    let apiURL = 'http://api.openweathermap.org/data/2.5/forecast?lat='+ lat +'&lon='+ lon +'&appid='+ apiKey +'&units=metric';
+    let apiURL = 'https://api.openweathermap.org/data/2.5/forecast?lat='+ lat +'&lon='+ lon +'&appid='+ apiKey +'&units=metric';
 
     fetch(apiURL)
         .then(function (response) {
