@@ -25,26 +25,26 @@
     <main class="content-dashboard">
         <!-- Left column -->
         <div id="left-column">
-        <div id="search-block">
+        <div class="search-block">
             <h2 class="l-title">Search for a City:</h2>
             <!-- Input text to look for a city name -->
             <input type="text" placeholder="City Name" id="city-input">
-            <button id="search-btn">Search</button>
+            <button class="btn" id="search-btn">Search</button>
         </div>
         
-        <div>
+        <div class="search-block">
             <h3 class="s-title">Recently searched:</h3>
-            <div id="search-history">
-                <!-- Class name for results -->
-                <!-- <p class="result"></p> -->
-            </div>
+            <ul id="search-history"></ul>
+            <button class="btn" id="delete-btn">Delete History</button>
         </div>
+
         </div>
         <!-- Right column -->
         <div id="right-column">
         <div id="city-info">
             <h2 id="current-city" class="l-title"></h2>
             <h2 id="current-date"></h2>
+            <img src="" alt="Weather logo" id="img-1">
             <p class="weather-data temp"></p>
             <p class="weather-data wind"></p>
             <p class="weather-data humidity"></p>
@@ -55,41 +55,46 @@
             <!-- Day 1 -->
             <div class="forecast-card" id="day-1">
                 <h4 class="card-title"></h4>
+                <img src="" alt="Weather logo" id="img-2">
                 <p class="weather-data temp"></p>
                 <p class="weather-data wind"></p>
                 <p class="weather-data humidity"></p>
-            </div>            
+                </div>            
             <!-- Day 2-->
             <div class="forecast-card" id="day-2">
                 <h4 class="card-title"></h4>
+                <img src="" alt="Weather logo" id="img-3">
                 <p class="weather-data temp"></p>
                 <p class="weather-data wind"></p>
                 <p class="weather-data humidity"></p>
-            </div>            
+                </div>            
             
             <!-- Day 3-->
             <div class="forecast-card" id="day-3">
                 <h4 class="card-title"></h4>
+                <img src="" alt="Weather logo" id="img-4">
                 <p class="weather-data temp"></p>
                 <p class="weather-data wind"></p>
                 <p class="weather-data humidity"></p>
-            </div>            
+                </div>            
             
             <!-- Day 4-->
             <div class="forecast-card" id="day-4">
                 <h4 class="card-title"></h4>
+                <img src="" alt="Weather logo" id="img-5">
                 <p class="weather-data temp"></p>
                 <p class="weather-data wind"></p>
                 <p class="weather-data humidity"></p>
-            </div>            
+                </div>            
             
             <!-- Day 5-->
             <div class="forecast-card" id="day-5">
                 <h4 class="card-title"></h4>
+                <img src="" alt="Weather logo" id="img-6">
                 <p class="weather-data temp"></p>
                 <p class="weather-data wind"></p>
                 <p class="weather-data humidity"></p>
-            </div>
+                </div>
         </div>
         </div>
     </main>
