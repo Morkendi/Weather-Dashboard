@@ -33,7 +33,7 @@ main {
     padding-right: 25px;
 }
 
-#search-block {
+.search-block {
     padding-bottom: 10px;
     border-bottom: 3px solid gray;
     display: flex;
@@ -54,7 +54,7 @@ main {
     font-size: 20px;
 }
 
-#search-btn {
+.btn {
     padding: 3px;
     font-size: 20px;
     font-weight: bolder;
@@ -64,7 +64,7 @@ main {
     background-color: var(--button);
 }
 
-#search-btn:hover {
+.btn:hover {
     cursor: pointer;
 }
 
@@ -73,12 +73,13 @@ main {
     font-size: 25px;
 }
 
-#search-history p {
+#search-history button {
     color: var(--text-1);
     font-size: 18px;
     text-align: center;
     padding: 8px;
-    margin: 10px;
+    margin-bottom: 10px;
+    width: 100%;
     background-color: var(--results);
 }
 
@@ -125,7 +126,7 @@ main {
 }
 
 footer { 
-    position: absolute;
+    position: fixed;
     text-align: center;
     bottom: 0px;
     width: 100%;
