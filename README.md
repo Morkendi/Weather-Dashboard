@@ -5,12 +5,6 @@
 <img src="https://img.shields.io/github/repo-size/Morkendi/Weather-Dashboard?color=green&label=Repo%20Size"></img>
 </div>
 
-<div align="center"> <h2>Dependencies</h2> </div>
-
-<div align="center"> 
-    <img src="https://img.shields.io/badge/dotenv-red"><img>
-</div>
-
 ## Table of contents <!-- omit in toc -->
 
 - [Description](#description)
@@ -39,16 +33,12 @@ The landing page consist of 2 main elements:
 ## Mock Up
 The following images demonstrate the functionality of the application.
 <div align="center">
-        <h2></h2>
-    <img src="" alt=""></img>
-        <h2></h2>
-    <img src="" alt=""></img>
-        <h2></h2>
-    <img src="" alt=""></img>
-        <h2></h2>
-    <img src="" alt=""></img>
-        <h2></h2>
-    <img src="" alt=""></img>
+        <h2>Homepage</h2>
+    <img src="./assets/Homepage.png" alt="HOmepage"></img>
+        <h2>Search Example</h2>
+    <img src="./assets/Search.png" alt="Search"></img>
+        <h2>Functionality Demo</h2>
+    <img src="./assets/Demo.gif" alt="Demo"></img>
 </div>
 
 ## License
@@ -58,4 +48,5 @@ This project utilizes an MIT License. [Read more](https://choosealicense.com/lic
 - Code by: [Daniel Sanchez](https://github.com/Morkendi)
 
 ## Links
+- Link to [GitHub Repo](https://github.com/Morkendi/Weather-Dashboard)
 - Link to [Deployment](https://morkendi.github.io/Weather-Dashboard/)
